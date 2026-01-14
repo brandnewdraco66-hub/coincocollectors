@@ -1,0 +1,51 @@
+/* Toast Notification - nedre högra hörnet */
+.toast {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  min-width: 300px;
+  max-width: 400px;
+  padding: 16px 20px;
+  border-radius: 12px;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  animation: slideIn 0.5s ease-out;
+  z-index: 9999;
+}
+
+.toast-success {
+  background: linear-gradient(45deg, #10b981, #34d399);
+}
+
+.toast-error {
+  background: linear-gradient(45deg, #dc2626, #ef4444);
+}
+
+.toast-close {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+  margin-left: 20px;
+  opacity: 0.8;
+}
+
+.toast-close:hover {
+  opacity: 1;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

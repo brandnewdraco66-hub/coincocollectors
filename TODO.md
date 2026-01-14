@@ -1,0 +1,9 @@
+- [x] Add username to saveGame state
+- [x] Remove loadProfiles and saveProfiles functions
+- [x] Remove separate localStorage calls for profiles and currentProfileId in createProfile and selectProfile
+- [x] Update loadGame to load username from game state instead of localStorage
+- [x] Remove separate profile loading logic in loadGame
+- [x] Ensure saveGame is called after username changes in profile functions and UsernamePopup
+- [x] Fix loadProfiles reference error in loadGame
+- [x] Test profile saving and loading
+- [x] Fix CNP saving per profile
